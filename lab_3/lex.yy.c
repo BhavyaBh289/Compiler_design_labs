@@ -654,7 +654,7 @@ YY_DECL
 		}
 
 	{
-#line 3 "convert.l"
+#line 1 "convert.l"
 
 #line 659 "lex.yy.c"
 
@@ -715,17 +715,17 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 4 "convert.l"
-{printf("%c",(yytext[0]-=32));}
+#line 2 "convert.l"
+printf("%c",(yytext[0]-32));
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 5 "convert.l"
-{printf("%c",(yytext[0]+=32));}
+#line 3 "convert.l"
+printf("%c",(yytext[0]+32));
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 6 "convert.l"
+#line 4 "convert.l"
 ECHO;
 	YY_BREAK
 #line 731 "lex.yy.c"
@@ -1733,11 +1733,9 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 6 "convert.l"
+#line 4 "convert.l"
 
-#include<ctype.h>
-int main(){
+main(){
     yylex();
-    return 0;
 }
 
