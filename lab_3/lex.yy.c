@@ -1735,7 +1735,7 @@ void yyfree (void * ptr )
 
 #line 4 "convert.l"
 
-main(){
+void main(){
     yylex();
 }
 
