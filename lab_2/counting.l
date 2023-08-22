@@ -1,11 +1,11 @@
-/* alphabet [0-9a-zA-Z] */
+
 %{
     int charn, wordn, linen ;
 %}
 
 %%
-[\n] {wordn++; linen++; /*printf("%dcharachters & %d words\n",charn,wordn); charn=0; wordn=0;*/}
-[ ^ \t] {wordn++;/*printf("%dcharachters \n",charn); charn=0;*/ }
+[\n] {wordn++; linen++;}
+[ ^ \t] {wordn++; }
 . {charn++;}
 %%
 int main(void){

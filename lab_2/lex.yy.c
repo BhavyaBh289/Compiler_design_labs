@@ -436,12 +436,11 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "1.l"
-/* alphabet [0-9a-zA-Z] */
-#line 3 "1.l"
+#line 1 "counting.l"
+#line 3 "counting.l"
     int charn, wordn, linen ;
+#line 442 "lex.yy.c"
 #line 443 "lex.yy.c"
-#line 444 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -658,9 +657,9 @@ YY_DECL
 		}
 
 	{
-#line 6 "1.l"
+#line 6 "counting.l"
 
-#line 663 "lex.yy.c"
+#line 662 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -720,25 +719,25 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
-#line 7 "1.l"
-{wordn++; linen++; /*printf("%dcharachters & %d words\n",charn,wordn); charn=0; wordn=0;*/}
+#line 7 "counting.l"
+{wordn++; linen++;}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 8 "1.l"
-{wordn++;/*printf("%dcharachters \n",charn); charn=0;*/ }
+#line 8 "counting.l"
+{wordn++; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 9 "1.l"
+#line 9 "counting.l"
 {charn++;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 10 "1.l"
+#line 10 "counting.l"
 ECHO;
 	YY_BREAK
-#line 741 "lex.yy.c"
+#line 740 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1743,7 +1742,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 10 "1.l"
+#line 10 "counting.l"
 
 int main(void){
     yylex();

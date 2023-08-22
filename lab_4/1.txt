@@ -1,0 +1,87 @@
+library #include<stdio.h> 
+"int " is keyword
+"ack" is a identifier
+"package" is a identifier
+"wait_for_ack" is a identifier
+"wait_for_package" is a identifier
+"sendtime" is a identifier
+semicolon
+"int " is keyword
+"main" is a identifier
+"int " is keyword
+"i" is a identifier
+semicolon
+"ack" is a identifier
+semicolon
+"while" is a identifier
+"i" is a identifier
+"sender" is a identifier
+semicolon
+"receiver" is a identifier
+semicolon
+"i" is a identifier
+semicolon
+"void " is keyword
+"sender" is a identifier
+"if" is a identifier
+"ack" is a identifier
+"printf" is keyword
+"sending" is a identifier
+"package" is a identifier
+\"n" is a identifier
+semicolon
+"ack" is a identifier
+semicolon
+"wait_for_package" is a identifier
+"sendtime" is a identifier
+semicolon
+"else" is a identifier
+"printf" is keyword
+"sender" is a identifier
+"waiting" is a identifier
+"for" is a identifier
+"ack" is a identifier
+\"n" is a identifier
+semicolon
+"if" is a identifier
+"wait_for_package" is a identifier
+"wait_for_package" is a identifier
+semicolon
+"if" is a identifier
+"wait_for_ack" is a identifier
+"package" is a identifier
+semicolon
+"void " is keyword
+"receiver" is a identifier
+"if" is a identifier
+"package" is a identifier
+"printf" is keyword
+"package" is a identifier
+"received" is a identifier
+\"n" is a identifier
+"sending" is a identifier
+"ack" is a identifier
+\"n" is a identifier
+\"n" is a identifier
+semicolon
+"package" is a identifier
+semicolon
+"wait_for_ack" is a identifier
+"sendtime" is a identifier
+semicolon
+"else" is a identifier
+"printf" is keyword
+"receiver" is a identifier
+"waiting" is a identifier
+"for" is a identifier
+"package" is a identifier
+\"n" is a identifier
+semicolon
+"if" is a identifier
+"wait_for_ack" is a identifier
+"wait_for_ack" is a identifier
+semicolon
+"if" is a identifier
+"wait_for_ack" is a identifier
+"ack" is a identifier
+semicolon

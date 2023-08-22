@@ -1,0 +1,7 @@
+library #include<stdio.h> 
+keywords are 
+void , printf, int , else, if, 
+operators are 
+"+", "-", "=", ";", "(", ")", "{", "}", "<", ">", 
+identifiers are 
+ack , ,package ,wait_for_ack ,wait_for_package ,sendtime ,main ,i ,while ,sender ,receiver ,sending ,waiting ,for ,
