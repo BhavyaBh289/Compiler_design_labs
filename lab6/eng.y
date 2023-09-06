@@ -2,10 +2,13 @@
     #include<stdio.h>
 
 %}
-%token pronoun noun verb article
+%token pronoun noun verb article fs conj
 %start  Sentence
 %%
-Sentence : sub verb article noun {printf("correct grammer");} ;
+Sentence : simple fs {printf("simple Sentence");} |
+compound fs {printf("compound Sentence");};
+simple :sub verb article noun ;
+compound: simple conj simple ;
 sub : noun | pronoun ;
 
 %%

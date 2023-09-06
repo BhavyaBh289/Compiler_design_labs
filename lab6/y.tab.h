@@ -57,7 +57,9 @@ extern int yydebug;
     pronoun = 258,                 /* pronoun  */
     noun = 259,                    /* noun  */
     verb = 260,                    /* verb  */
-    article = 261                  /* article  */
+    article = 261,                 /* article  */
+    fs = 262,                      /* fs  */
+    conj = 263                     /* conj  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -70,6 +72,8 @@ extern int yydebug;
 #define noun 259
 #define verb 260
 #define article 261
+#define fs 262
+#define conj 263
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
