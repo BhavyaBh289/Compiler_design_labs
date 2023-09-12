@@ -1329,7 +1329,11 @@ void yyerror(){
     printf("error");
 }
 int main(){
-    yyparse();
+    extern FILE * yyin;
+    yyin=fopen("1.txt","r");
+    while(!feof(yyin)){
+        yyparse();
+    }
     return 0;
 }
 
