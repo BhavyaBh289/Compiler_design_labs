@@ -71,8 +71,7 @@
 
     #include<stdio.h>
 
-
-#line 76 "y.tab.c"
+#line 75 "y.tab.c"
 
 # ifndef YY_CAST
 #  ifdef __cplusplus
@@ -497,16 +496,16 @@ union yyalloc
 /* YYFINAL -- State number of the termination state.  */
 #define YYFINAL  7
 /* YYLAST -- Last index in YYTABLE.  */
-#define YYLAST   9
+#define YYLAST   12
 
 /* YYNTOKENS -- Number of terminals.  */
 #define YYNTOKENS  9
 /* YYNNTS -- Number of nonterminals.  */
 #define YYNNTS  5
 /* YYNRULES -- Number of rules.  */
-#define YYNRULES  7
+#define YYNRULES  8
 /* YYNSTATES -- Number of states.  */
-#define YYNSTATES  15
+#define YYNSTATES  16
 
 /* YYMAXUTOK -- Last valid token kind.  */
 #define YYMAXUTOK   263
@@ -556,7 +555,7 @@ static const yytype_int8 yytranslate[] =
 /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_int8 yyrline[] =
 {
-       0,     8,     8,     9,    10,    11,    12,    12
+       0,     7,     7,     8,     8,     9,    10,    11,    11
 };
 #endif
 
@@ -598,8 +597,8 @@ yysymbol_name (yysymbol_kind_t yysymbol)
    STATE-NUM.  */
 static const yytype_int8 yypact[] =
 {
-      -3,    -6,    -6,     4,    -5,    -2,     1,    -6,    -6,    -3,
-      -6,     2,    -6,     3,    -6
+      -2,    -6,    -6,     0,    -1,     1,     4,    -6,    -2,    -6,
+      -2,    -6,     5,    -6,     6,    -6
 };
 
 /* YYDEFACT[STATE-NUM] -- Default reduction number in state STATE-NUM.
@@ -607,20 +606,20 @@ static const yytype_int8 yypact[] =
    means the default is an error.  */
 static const yytype_int8 yydefact[] =
 {
-       0,     7,     6,     0,     0,     0,     0,     1,     2,     0,
-       3,     0,     5,     0,     4
+       0,     8,     7,     0,     0,     0,     0,     1,     4,     2,
+       0,     3,     0,     6,     0,     5
 };
 
 /* YYPGOTO[NTERM-NUM].  */
 static const yytype_int8 yypgoto[] =
 {
-      -6,    -6,     0,    -6,    -6
+      -6,    12,    -5,    -6,    -6
 };
 
 /* YYDEFGOTO[NTERM-NUM].  */
 static const yytype_int8 yydefgoto[] =
 {
-       0,     3,     4,     5,     6
+       0,     8,     4,     5,     6
 };
 
 /* YYTABLE[YYPACT[STATE-NUM]] -- What to do in state STATE-NUM.  If
@@ -628,32 +627,34 @@ static const yytype_int8 yydefgoto[] =
    number is the opposite.  If YYTABLE_NINF, syntax error.  */
 static const yytype_int8 yytable[] =
 {
-       1,     2,     8,     9,     7,    10,    11,    14,    13,    12
+       7,     1,     2,     1,     2,    13,     9,    10,    11,    12,
+      15,    14,     3
 };
 
 static const yytype_int8 yycheck[] =
 {
-       3,     4,     7,     8,     0,     7,     5,     4,     6,     9
+       0,     3,     4,     3,     4,    10,     7,     8,     7,     5,
+       4,     6,     0
 };
 
 /* YYSTOS[STATE-NUM] -- The symbol kind of the accessing symbol of
    state STATE-NUM.  */
 static const yytype_int8 yystos[] =
 {
-       0,     3,     4,    10,    11,    12,    13,     0,     7,     8,
-       7,     5,    11,     6,     4
+       0,     3,     4,    10,    11,    12,    13,     0,    10,     7,
+       8,     7,     5,    11,     6,     4
 };
 
 /* YYR1[RULE-NUM] -- Symbol kind of the left-hand side of rule RULE-NUM.  */
 static const yytype_int8 yyr1[] =
 {
-       0,     9,    10,    10,    11,    12,    13,    13
+       0,     9,    10,    10,    10,    11,    12,    13,    13
 };
 
 /* YYR2[RULE-NUM] -- Number of symbols on the right-hand side of rule RULE-NUM.  */
 static const yytype_int8 yyr2[] =
 {
-       0,     2,     2,     2,     4,     3,     1,     1
+       0,     2,     2,     2,     2,     4,     3,     1,     1
 };
 
 
@@ -1117,19 +1118,19 @@ yyreduce:
   switch (yyn)
     {
   case 2: /* Sentence: simple fs  */
-#line 8 "eng.y"
+#line 7 "eng.y"
                      {printf("simple Sentence");}
-#line 1123 "y.tab.c"
+#line 1124 "y.tab.c"
     break;
 
   case 3: /* Sentence: compound fs  */
-#line 9 "eng.y"
+#line 8 "eng.y"
             {printf("compound Sentence");}
-#line 1129 "y.tab.c"
+#line 1130 "y.tab.c"
     break;
 
 
-#line 1133 "y.tab.c"
+#line 1134 "y.tab.c"
 
       default: break;
     }
@@ -1322,7 +1323,7 @@ yyreturnlab:
   return yyresult;
 }
 
-#line 14 "eng.y"
+#line 13 "eng.y"
 
 void yyerror(){
     printf("error");
